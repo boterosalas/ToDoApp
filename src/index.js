@@ -17,4 +17,4 @@ todoList.todos.forEach(todo => {
 
 pendientes(todoList.cantidadPendientes())
 
-console.log('todos',todoList.todos);
+// console.log('todos',todoList.todos);
