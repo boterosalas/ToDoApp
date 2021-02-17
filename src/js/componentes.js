@@ -58,11 +58,11 @@ divTodoList.addEventListener('click', (event) => {
     if (nombreElemento.includes('input')) {
         todoList.marcarCompletado(todoId);
         todoElemento.classList.toggle('completed')
-        pendientes()
     } else if (nombreElemento.includes('button')) {
         todoList.eliminarTodo(todoId);
         divTodoList.removeChild(todoElemento)
     }
+    pendientes()
 })
 
 btnBorrar.addEventListener('click', () => {
@@ -73,6 +73,7 @@ btnBorrar.addEventListener('click', () => {
             divTodoList.removeChild(elemento)
         }
     }
+    pendientes()
 })
 
 ulFilters.addEventListener('click', event => {
